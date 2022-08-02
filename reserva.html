@@ -32,9 +32,50 @@
                 </div>  
             
     
-                <div class="row" style="margin-left: 0%;margin-right: 0%;margin-top: 5%;" >
-                    
+                
+                <div class = "col-lg-7" style="margin-left: 21%;">
+                   
+                  
+                        
+                        <form class="form-group" >
+                            
+                                        
+                                    
+        
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control" id="txtNombre">         
+                                        <label>Direccion</label>
+                                        <input type="text" class="form-control" id="txtdir">  
+                                        <label>Telefono</label>
+                                        <input type="number" class="form-control" id="txtTel"> 
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="txtEmail">   
+                                        <label>Observacion</label>
+                                        <textarea type="text" style="height: 150px; resize: none;" class="form-control" id="txtObs"></textarea>
+                                        <input class="btn btn-primary m-3" type="button" value="Enviar" style="width: 25%;" onclick="enviarmensaje()" >
+                                
+                            
+                        </form>    
+                </div>
+                  
+                        
+                      
                 </div>  
             </div>
         </div>
-    
+        <script>
+
+            function enviarmensaje(){
+                document.getElementById('txtNombre').value = "";
+                document.getElementById('txtdir').value = "";
+                document.getElementById('txtTel').value = "";
+                document.getElementById('txtEmail').value = "";
+                document.getElementById('txtObs').value = "";
+        
+                alert('Mensaje enviado');
+        
+            }
+        
+        
+        
+        </script>
